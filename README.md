@@ -22,10 +22,18 @@ The overall architecture of the proposed ScanSSC. After $F^{3D}$ is obtained thr
 ![KITTI360](./docs/KITTI360_results.png)
 
 ## Getting Started
+### Install
+ScanSSC is developed based on the official OccFormer & CGFormer codebased and the installation follows similar steps.
 
-GeoDepth Pretrained Weight  : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/pretrain_geodepth.pth  
-EfficientNet                : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth  
-ScanSSC Weight              : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/ScanSSC_SemanticKitti.ckpt
+**1. Create a conda virtual environment and activate**
+
+python 3.8 may not be supported
+
+```shell
+conda create -n ScanSSC python=3.7 -y
+conda activate ScanSSC
+```
+
 
 ## Model Performance
 We provide the pretrained weight on SemanticKITTI and KITTI360 datasets, reproduced with the released codebase.
