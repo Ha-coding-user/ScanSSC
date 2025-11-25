@@ -26,3 +26,12 @@ The overall architecture of the proposed ScanSSC. After $F^{3D}$ is obtained thr
 GeoDepth Pretrained Weight  : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/pretrain_geodepth.pth  
 EfficientNet                : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth  
 ScanSSC Weight              : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/ScanSSC_SemanticKitti.ckpt
+
+## Model Performance
+We provide the pretrained weight on SemanticKITTI and KITTI360 datasets, reproduced with the released codebase.
+The pretrained checkpoint efficientnet-seg-depth can be download from [here](https://github.com/Ha-coding-user/ScanSSC/releases/download/tag/v1.0/pretrain_geodepth.pth).
+
+|                           Dataset                            |    Backbone    |        IoU         |        mIoU        |                        Model Weights                         |
+| :----------------------------------------------------------: | :------------: | :----------------: | :----------------: | :----------------------------------------------------------: |
+| [SemanticKITTI](configs/semantickitti_ScanSSC.py) | EfficientNetB7 | 44.54 | 17.40 | [Link](https://github.com/Ha-coding-user/ScanSSC/releases/download/tag/v1.0/ScanSSC_SemanticKITTI.ckpt) |
+|   [KITTI360](configs/kitti360_ScanSSC.py)    | EfficientNetB7 |       48.29        |       20.14        | [Link](https://github.com/Ha-coding-user/ScanSSC/releases/download/tag/v1.0/ScanSSC_KITTI360.ckpt) |
