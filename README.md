@@ -74,8 +74,10 @@ pip3 install natten==0.14.6+torch1101cu113 -f https://shi-labs.com/natten/wheels
 ```
 
 ### B. Train and Eval
+
 **1. Train**
-```
+
+```shell
 CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
 --config_path configs/semantickitti_ScanSSC.py \
 --log_folder semantickitti_ScanSSC \
@@ -84,6 +86,38 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
 ```
 
 The training logs and checkpoints will be saved under the log_folder.
+
+**2. Evaluation**
+
+```shell
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
+--eval --ckpt_path ./ckpts/ScanSSC_SemanticKITTI.ckpt \
+--config_path configs/semantickitti_ScanSSC.py \
+--log_folder semantickitti_ScanSSC_eval --seed 7240 \
+--log_every_n_steps 50
+```
+
+**3. Evaluation with Saving the Results**
+
+```shell
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
+--eval --ckpt_path ./ckpts/ScanSSC_SemanticKITTI.ckpt \
+--config_path configs/semantickitti_ScanSSC.py \
+--log_folder semantickitti_ScanSSC_eval --seed 7240 \
+--log_every_n_steps 50 --save_path pred
+```
+
+The results will be saved into the save_path.
+
+**4. Submission**
+
+```shell
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
+--eval --ckpt_path ./ckpts/ScanSSC_SemanticKITTI.ckpt \
+--config_path configs/semantickitti_ScanSSC.py \
+--log_folder semantickitti_ScanSSC_eval --seed 7240 \
+--log_every_n_steps 50 --save_path pred --test_mapping
+```
 
 
 ## Model Performance
