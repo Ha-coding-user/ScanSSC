@@ -21,6 +21,10 @@ The overall architecture of the proposed ScanSSC. After $F^{3D}$ is obtained thr
 
 ![KITTI360](./docs/KITTI360_results.png)
 
+## Dataset Preparation
+
+For the dataset structure, please follow [this](./docs/dataset.md) format.
+
 ## Getting Started
 ### A. Install
 ScanSSC is developed based on the official OccFormer & CGFormer codebased and the installation follows similar steps.
