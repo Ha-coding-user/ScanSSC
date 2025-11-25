@@ -22,7 +22,7 @@ The overall architecture of the proposed ScanSSC. After $F^{3D}$ is obtained thr
 ![KITTI360](./docs/KITTI360_results.png)
 
 ## Getting Started
-### Install
+### A. Install
 ScanSSC is developed based on the official OccFormer & CGFormer codebased and the installation follows similar steps.
 
 **1. Create a conda virtual environment and activate**
@@ -73,6 +73,17 @@ pip install yapf==0.40.1
 pip3 install natten==0.14.6+torch1101cu113 -f https://shi-labs.com/natten/wheels
 ```
 
+### B. Train and Eval
+**1. Train**
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
+--config_path configs/semantickitti_ScanSSC.py \
+--log_folder semantickitti_ScanSSC \
+--seed 7240 \
+--log_every_n_steps 50
+```
+
+The training logs and checkpoints will be saved under the log_folder.
 
 
 ## Model Performance
