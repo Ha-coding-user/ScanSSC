@@ -35,3 +35,37 @@ The pretrained checkpoint efficientnet-seg-depth can be download from [here](htt
 | :----------------------------------------------------------: | :------------: | :----------------: | :----------------: | :----------------------------------------------------------: |
 | [SemanticKITTI](configs/semantickitti_ScanSSC.py) | EfficientNetB7 | 44.54 | 17.40 | [Link](https://github.com/Ha-coding-user/ScanSSC/releases/download/tag/v1.0/ScanSSC_SemanticKITTI.ckpt) |
 |   [KITTI360](configs/kitti360_ScanSSC.py)    | EfficientNetB7 |       48.29        |       20.14        | [Link](https://github.com/Ha-coding-user/ScanSSC/releases/download/tag/v1.0/ScanSSC_KITTI360.ckpt) |
+
+## Acknowledgement
+
+Many thanks to these exceptional open source projects:
+- [BEVFormer](https://github.com/fundamentalvision/BEVFormer)
+- [mmdet3d](https://github.com/open-mmlab/mmdetection3d)
+- [MonoScene](https://github.com/astra-vision/MonoScene)
+- [semantic-kitti-api](https://github.com/PRBonn/semantic-kitti-api) 
+- [MobileStereoNet](https://github.com/cogsys-tuebingen/mobilestereonet)
+- [Symphonize](https://github.com/hustvl/Symphonies.git)
+- [DFA3D](https://github.com/IDEA-Research/3D-deformable-attention.git)
+- [VoxFormer](https://github.com/NVlabs/VoxFormer.git)
+- [OccFormer](https://github.com/zhangyp15/OccFormer.git)
+- [CGFormer](https://github.com/pkqbajng/CGFormer.git)
+
+As it is not possible to list all the projects of the reference papers. If you find we leave out your repo, please contact us and we'll update the lists.
+
+## Bibtex
+
+If you find our work beneficial for your research, please consider citing our paper and give us a star:
+
+```
+
+@InProceedings{Bae_2025_CVPR,
+    author    = {Bae, Jongseong and Ha, Junwoo and Kim, Ha Young},
+    title     = {Three Cars Approaching within 100m! Enhancing Distant Geometry by Tri-Axis Voxel Scanning for Camera-based Semantic Scene Completion},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {11939-11948}
+}
+```
+
+If you encounter any issues, please contact gkwnsdn1130@gmail.com
