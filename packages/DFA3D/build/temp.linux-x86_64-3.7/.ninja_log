@@ -1,0 +1,19 @@
+# ninja log v5
+2	11720	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/cudabind.o	76eceda969d92a2b
+2	12118	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/ms_depth_score_sample.o	2ad5a4e4ffd06bf9
+2	12196	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/wms_deform_attn.o	ea168acaccbeb471
+2	13310	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/ms_depth_score_sample_cuda.o	455253a665468649
+1	15719	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/wms_deform_attn_cuda.o	e2addd9798a5dc90
+2	17542	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/pybind.o	9d2f59b90d7e7829
+4	16176	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/ms_depth_score_sample.o	9ab92adc9f391864
+5	16878	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/wms_deform_attn.o	7b06d2859a99913f
+4	16931	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/cudabind.o	c3000a73f9bf14f5
+4	18786	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/ms_depth_score_sample_cuda.o	2f8d5ac694aa6a8e
+5	21794	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/wms_deform_attn_cuda.o	efea21ed8787879b
+5	23928	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/pybind.o	4990a33398113c18
+4	13448	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/wms_deform_attn.o	11f658f3f6a438db
+4	13856	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/cudabind.o	c969591a482d2e0
+4	14231	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/ms_depth_score_sample.o	b0b825b4d4626f56
+4	15002	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/ms_depth_score_sample_cuda.o	4bed064474a3791d
+4	17334	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/cuda/wms_deform_attn_cuda.o	4ec5af85e55e3e76
+4	18903	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.7/dfa3D/ops/csrc/pybind.o	b3ee8d353bda046c

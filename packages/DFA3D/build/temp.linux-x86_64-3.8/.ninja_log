@@ -1,0 +1,7 @@
+# ninja log v5
+1	27341	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.8/dfa3D/ops/csrc/ms_depth_score_sample.o	c7555f53a1e6d5ce
+1	30048	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.8/dfa3D/ops/csrc/cuda/ms_depth_score_sample_cuda.o	f4d767879fddd9db
+1	33165	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.8/dfa3D/ops/csrc/cuda/cudabind.o	5f712b27b951ee3e
+2	35129	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.8/dfa3D/ops/csrc/wms_deform_attn.o	654e4222e57a2d69
+1	36428	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.8/dfa3D/ops/csrc/cuda/wms_deform_attn_cuda.o	953392b2efe2c25a
+2	48830	0	/nas1/hamyo/SSC/ScanSSC_efficientNet/packages/DFA3D/build/temp.linux-x86_64-3.8/dfa3D/ops/csrc/pybind.o	c0319b3b696345c3
