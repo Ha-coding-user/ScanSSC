@@ -119,6 +119,23 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
 --log_every_n_steps 50 --save_path pred --test_mapping
 ```
 
+### C. Visualization
+
+**1. Prepare environment**
+
+We recommend creating a new conda environment for installation to avoid dependency conflicts.
+
+```shell
+pip install vtk==9.0.1 
+pip install mayavi==4.7.3
+pip install PyQt5
+pip install configobj
+```
+
+**2. Visualization**
+```shell
+python tools/visualize.py
+```
 
 ## Model Performance
 We provide the pretrained weight on SemanticKITTI and KITTI360 datasets, reproduced with the released codebase.
