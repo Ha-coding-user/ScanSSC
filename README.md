@@ -34,6 +34,46 @@ conda create -n ScanSSC python=3.7 -y
 conda activate ScanSSC
 ```
 
+**2. Install Pytorch and torchvision following the [official instructions](https://pytorch.org/get-started/previous-versions/)**
+
+```shell
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+```
+
+or
+
+```shell
+pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+```
+
+**3. Install mmcv, mmdet, and mmseg**
+
+```shell
+pip install openmim
+mim install mmcv-full==1.4.0
+mim install mmdet==2.14.0
+mim install mmsegmentation==0.14.1
+```
+
+**4. Install mmdet3d 0.17.1 and DFA3D**
+
+Compared with the offical version, the mmdetection3d provided by [OccFormer](https://github.com/zhangyp15/OccFormer) further includes operations like bev-pooling, voxel pooling. 
+
+```shell
+cd packages
+bash setup.sh
+cd ../
+```
+
+**5. Install other dependencies**
+
+```shell
+pip install -r docs/requirements.txt
+pip install yapf==0.40.1
+pip3 install natten==0.14.6+torch1101cu113 -f https://shi-labs.com/natten/wheels
+```
+
+
 
 ## Model Performance
 We provide the pretrained weight on SemanticKITTI and KITTI360 datasets, reproduced with the released codebase.
