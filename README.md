@@ -11,15 +11,15 @@ Camera-based Semantic Scene Completion (SSC) is gaining attentions in the 3D per
 
 ## Method
 
-![overview]()
+![overview](./docs/architecture.png)
 
 The overall architecture of the proposed ScanSSC. After $F^{3D}$ is obtained through the viewing transformation, it is passed through the three parallel Scan blocks of the Scan Module. Each block performs masked self-attention along the axis highlighted in red. The purple arrows indicate the 'near-to-far' direction, implemented by the corresponding mask below. $Q_{axis}, K_{axis}, V_{axis}$, and $Z_{axis}$ denote the query, key, value and output features of attention, respectively, where $axis\in\set{dep,wid,hgt}$.
 
 ## Quantitative Results
 
-![SemanticKITTI]()
+![SemanticKITTI](./docs/SemanticKITTI_results.png)
 
-![KITTI360]()
+![KITTI360](./docs/KITTI360_results.png)
 
 ## Getting Started
 
