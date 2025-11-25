@@ -13,6 +13,16 @@ Camera-based Semantic Scene Completion (SSC) is gaining attentions in the 3D per
 
 ![overview]()
 
+The overall architecture of the proposed ScanSSC. After $F^{3D}$ is obtained through the viewing transformation, it is passed through the three parallel Scan blocks of the Scan Module. Each block performs masked self-attention along the axis highlighted in red. The purple arrows indicate the 'near-to-far' direction, implemented by the corresponding mask below. $Q_{axis}, K_{axis}, V_{axis}$, and $Z_{axis}$ denote the query, key, value and output features of attention, respectively, where $axis\in\set{dep,wid,hgt}$.
+
+## Quantitative Results
+
+![SemanticKITTI]()
+
+![KITTI360]()
+
+## Getting Started
+
 GeoDepth Pretrained Weight  : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/pretrain_geodepth.pth  
 EfficientNet                : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth  
 ScanSSC Weight              : https://github.com/Ha-coding-user/ScanSSC/releases/download/v1.0/ScanSSC_SemanticKitti.ckpt
