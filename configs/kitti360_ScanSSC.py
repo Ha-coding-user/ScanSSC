@@ -1,7 +1,7 @@
 # Please modify the dataset directories
-data_root = '/nas3/Datasets/SSCBenchKITTI360'
-ann_file = '/nas3/Datasets/SSCBenchKITTI360/labels'
-stereo_depth_root = '/nas3/Datasets/SSCBenchKITTI360/depth'
+data_root = 'Data/SSCBenchKITTI360'
+ann_file = 'Data/SSCBenchKITTI360/labels'
+stereo_depth_root = 'Data/SSCBenchKITTI360/depth'
 camera_used = ['left']
 
 dataset_type = 'KITTI360Dataset'
@@ -158,7 +158,7 @@ model = dict(
         out_indices=(2, 3, 4, 5, 6),
         with_cp=True,
         init_cfg=dict(type='Pretrained', prefix='backbone', 
-        checkpoint='/nas1/hamyo/model_weights/EfficientNet/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth'), # Please modify the weight directory
+        checkpoint='./ckpts/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth'), # Please modify the weight directory
     ),
     img_neck=dict(
         type='SECONDFPN',
@@ -344,4 +344,4 @@ lr_scheduler = dict(
     interval="step",
     frequency=1
 )
-load_from = '/nas1/hamyo/model_weights/geodepth/pretrain_geodepth.pth' # Please modify the weight directory
+load_from = './ckpts/pretrain_geodepth.pth' # Please modify the weight directory
