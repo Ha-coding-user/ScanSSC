@@ -1,7 +1,7 @@
 # Please modify the dataset directories
-data_root = '/nas1/hamyo/Data/kitti/dataset'
-ann_file = '/nas1/hamyo/Data/kitti/dataset/labels'
-stereo_depth_root = '/nas1/hamyo/Data/kitti/dataset/depth'
+data_root = 'Data/kitti/dataset'
+ann_file = 'Data/kitti/dataset/labels'
+stereo_depth_root = 'Data/kitti/dataset/depth'
 camera_used = ['left']
 
 dataset_type = 'SemanticKITTIDataset'
@@ -147,7 +147,7 @@ model = dict(
         out_indices=(2, 3, 4, 5, 6),
         with_cp=False,
         init_cfg=dict(type='Pretrained', prefix='backbone', 
-        checkpoint='/nas1/hamyo/model_weights/EfficientNet/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth'), # Please modify the weight directory
+        checkpoint='./ckpts/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth'), # Please modify the weight directory
     ),
     img_neck=dict(
         type='SECONDFPN',
@@ -333,4 +333,4 @@ lr_scheduler = dict(
     interval="step",
     frequency=1
 )
-load_from = '/nas1/hamyo/model_weights/geodepth/pretrain_geodepth.pth' # Please modify the weight directory
+load_from = './ckpts/pretrain_geodepth.pth' # Please modify the weight directory
